@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     height:max-content;
-    width: 100dvw;
+    width: 100%;
     /* color: #007dbc;
     color: #5ae500;
     color: #10d3fb; */
@@ -139,13 +139,14 @@ body{
     width: 100%;
     height: 60px ;
     display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 1111;
     background-color: #fff;
 }
 .nav_Bar-navDetails-directory{
-    width: 50%;
+    width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -177,6 +178,32 @@ body{
 .nav_Bar-navDetails-directory a:is(:hover, :focus)::before{
     width: 100%;
 }
+.nav_Bar-navDetails-directory_aboutUsDropDown{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 35%;
+    align-items: center;
+}
+.showing_dropdown{
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    gap: 20px;
+    background-color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 120%;
+    opacity: 0;
+    display: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.151);
+    transition: 0.5s ease-in-out;
+}
+.nav_Bar-navDetails-directory_aboutUsDropDown:hover .showing_dropdown{
+    opacity: 1;
+    top: 110%;
+    display: flex;
+}
 .nav_Bar-navDetails-searchAndContact{
     width: 50%;
     height: 100%;
@@ -188,15 +215,20 @@ body{
 }
 .nav_Bar-navDetails-searchAndContact svg{
     width: 20px;
+    cursor: pointer;
 }
 .nav_Bar-navDetails-searchAndContact a{
     text-decoration: none;
     color: #fff;
-    font-weight: 600;
+    font-weight: 800;
     background-color: #007dbc;
     height: 70%;
-    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
     border-radius: 30px;
+    font-size: 13px;
 }
 .nav_Bar-mobileView{
     display: none;
@@ -204,7 +236,62 @@ body{
 .nav_Bar-navDetails-directory_mobileView{
     display: none;
 }
+.nav_Bar-navDetails-searchAndContact_SearchBarCover{
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    z-index: -11111;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.897);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+.nav_Bar-navDetails-searchAndContact_SearchBarCover form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.nav_Bar-navDetails-searchAndContact_SearchBarCover form input[type='search']{
+    width: 40%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+    font-size: 24px;
+    outline: none;
 
+}
+.nav_Bar-navDetails-searchAndContact_SearchBarCover form input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.nav_Bar-navDetails-searchAndContact_SearchBarCover form input:focus{
+    outline: none;
+}
+.nav_Bar-navDetails-searchAndContact_SearchBarCover form input::placeholder{
+    color: white;
+    font-weight: 500;
+}
+.searchBarFunctions{
+    color: white;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30%;
+    cursor: pointer;
+}
+.searchBarFunctions:nth-child(1){
+    right: 33%;
+}
+.showdetails{
+    opacity: 1;
+    z-index: 11111;
+}
 @media screen and (max-width:450px){
     .nav_Bar-imageContainer_details{
         display: none;
@@ -240,6 +327,21 @@ body{
     }
     .ii{
         color: rgba(128, 128, 128, 0.514);
+        cursor: pointer;
+    }
+    .nav_Bar-navDetails-searchAndContact_SearchBarCover form input[type='search']{
+        width: 90%;
+    }
+    .searchBarFunctions{
+        color: white;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+    }
+    .searchBarFunctions:nth-child(1){
+        right: 15%;
     }
     .nav_Bar-navDetails-directory_mobileView{
         width: 100%;
@@ -255,7 +357,7 @@ body{
         opacity: 0;
         z-index: -11;
     }
-    .nav_Bar-navDetails-directory_mobileView a{
+    .nav_Bar-navDetails-directory_mobileViewLink{
         color: white;
         text-decoration: none;
         width: 70%;
@@ -263,6 +365,25 @@ body{
         text-align: center;
         font-weight: 500;
         margin-bottom: 10px;
+    }
+    .nav_Bar-navDetails-directory_mobileViewLink_dropdown{
+        display: flex;
+        flex-direction: column;
+    }
+    .dropDownNotShown{
+        flex-direction: column;
+        display: none;
+        transition: 0.5s ease-in-out;
+    }
+    .dropDownNotShown a{
+        color: white;
+        text-decoration: underline;
+        text-align: start;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .dropdownShown{
+        display: flex;
     }
     .showdetails{
         opacity: 1;
@@ -1103,28 +1224,55 @@ body{
 }
 .footer-Contact_info{
     width: 100%;
-    height: 250px;
-    background-color: #007dbc;
+    height: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid;
+    background-color: transparent;
 }
 .footer-Contact_info div{
     display: flex;
-    width: 30%;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
     height: 100%;
+}
+.footer-Contact_info-location{
+    background-image: url('../images/close-up-veterinarian-doing-some-tests.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.footer-Contact_info-location_cover{
+    width: 100%;
+    height: 100%;
+    background-color: #007dbcc0;
+    position: absolute;
+    top: 0;
+}
+.footer-Contact_info-contact, .footer-Contact_info-telephone{
+    background-color: #007dbc;
 }
 .footer-Contact_info div span{
     color: white;
     font-size: 36px;
+    font-weight: 600;
+    z-index: 1;
 }
 .footer-Contact_info div p{
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 .footer-Contact_info div p span{
-    font-size: 24px;
+    color: rgba(255, 255, 255, 0.507);
+    font-size: 20px;
+}
+.footer-Contact_info div p small{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
 }
 .footer-info{
     width: 100%;
@@ -1134,6 +1282,94 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+.footer-info div{
+    height: 85%;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.footer-info-addressandContactDetails img{
+    width: 60%;
+    height: 40%;
+    margin-bottom: 20px;
+}
+.footer-info-addressandContactDetails address{
+    width: 90%;
+    line-height: 2.1rem;
+    color: rgba(128, 128, 128, 0.664);
+    margin-bottom: 20px;
+}
+.footer-info-addressandContactDetails p{
+    color: #007dbc;
+    font-size: 13px;
+    display: flex;
+    gap:10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+/* .footer-info-aboutUs, .footer-info-ourServices{
+    
+} */
+#footer-info-aboutUs-header, #footer-info-ourServices-header, #footer-info-hospitalHours-header{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.footer-info-aboutUs span, .footer-info-ourServices span{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: rgba(128, 128, 128, 0.651);
+    cursor: pointer;
+}
+.footer-info-aboutUs span:hover, .footer-info-ourServices span:hover{
+    color: #007dbc;
+}
+.footer-info-hospitalHours p{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #007dbc23;
+    padding-bottom: 5px;
+    height: max-content;
+    margin-bottom: 20px;
+}
+.footer-info-hospitalHours p span{
+    display: flex;
+    font-weight: 700;
+    color: #007dbc;
+    margin-bottom: 20px;
+}
+.footer-info-hospitalHours p span svg{
+    width: 8%;
+
+    margin-right: 3px;
+}
+.footer-info-hospitalHours p span:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.footer-info-hospitalHours p span:nth-child(2) small{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.footer-info-emergencyHour{
+    width: 80%;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #007dbc27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info-emergencyHour a{
+    color: #007dbc;
+    font-weight: 600;
+    text-decoration: none;
+}
 .copyright{
     width: 100%;
     display: flex;
@@ -1141,9 +1377,52 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    border: 1px solid red;
 }
 .copyright_socials{
     display: flex;
     gap: 30px;
+}
+.copyright_socials a{
+    color: black;
+    text-decoration: none;
+}
+
+.copyright span{
+    color: rgba(128, 128, 128, 0.623);
+}
+@media screen and (max-width:450px){
+    .footer_Details{
+        margin-top: 50px;
+    }
+    .footer-Contact_info{
+        flex-direction: column;
+        height: 600px;
+    }
+    .footer-Contact_info div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+    .footer-info{
+        height: 1200px;
+        flex-direction: column;
+    }
+    .footer-info div{
+        width: 100%;
+    }
+    .footer-info-addressandContactDetails img{
+        width: 40%;
+        height: 30%;
+    }
+    .copyright{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
 }

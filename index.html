@@ -134,15 +134,21 @@
     <div class="nav_Bar-navDetails">
         <div class="nav_Bar-navDetails-directory">
             <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Board of Directors</a>
+            <div class="nav_Bar-navDetails-directory_aboutUsDropDown">
+                <a href="#" class="defualt_dropdown">About Us</a>
+                <span class="showing_dropdown">
+                    <a href="">Our Mission</a>
+                    <a href="">Our Vision</a>
+                    <a href="">Our Core Values</a>
+                    <a href="">FAQs</a>
+                </span>
+            </div>
             <a href="#">Products</a>
-            <a href="#">Blog</a>
             <a href="#">Contact</a>
         </div>
         <div class="nav_Bar-navDetails-searchAndContact">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
+                stroke="currentColor" class="w-6 h-6" id="nav_Bar-navDetails-searchAndContact_searchbar">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
@@ -154,13 +160,32 @@
             class="w-6 h-6" id="closeMenuBar">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
-
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Board of Directors</a>
-        <a href="#">Products</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <a href="#" class="nav_Bar-navDetails-directory_mobileViewLink">Home</a>
+        <div class="nav_Bar-navDetails-directory_mobileViewLink nav_Bar-navDetails-directory_mobileViewLink_dropdown ">
+            <span id="nav_Bar-navDetails-directory_mobileViewLink_dropdown">About Us</span>
+            <span id="nav_Bar-navDetails-directory_mobileViewLink_dropdownDetails" class="dropDownNotShown">
+                <a href="#">Our Mission</a>
+                <a href="#">Our Vision</a>
+                <a href="#">Our Core Values</a>
+                <a href="#">FAQs</a>
+            </span>
+        </div>
+        <a href="#" class="nav_Bar-navDetails-directory_mobileViewLink">Products</a>
+        <a href="#" class="nav_Bar-navDetails-directory_mobileViewLink">Contact</a>
+    </div>
+    <div class="nav_Bar-navDetails-searchAndContact_SearchBarCover" id="nav_Bar-navDetails-searchAndContact_SearchBarCover">
+        <form action="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="searchBarFunctions">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="searchBarFunctions" id="searchBar_close">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+            <input type="search" placeholder="Search...">
+        </form>
     </div>
     <main class="main_Content">
         <div id="default-carousel" class="relative w-full border-2 main_Content-Container" data-carousel="slide">
@@ -202,7 +227,22 @@
                 <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
                     data-carousel-slide-to="1"></button>
             </div>
-
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
             <div class="missionAndVisionStatement">
                 <div class="missonStatement">
                     <span>
@@ -236,7 +276,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                             </svg>
-                            Mon-Fri
+                            Mon-Sat
                         </small>
                         <small>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -244,7 +284,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                             </svg>
-                            09:00 am - 5:30 pm
+                            08:00 am - 5:00 pm
                         </small>
                     </span>
                 </div>
@@ -507,21 +547,22 @@
     </main>
     <footer class="footer_Details">
         <section class="footer-Contact_info">
-            <div>
+            <div class="footer-Contact_info-location">
+                <div class="footer-Contact_info-location_cover"></div>
                 <span><i class="bi bi-geo-fill"></i></span>
                 <p>
                     <span>Get directions</span>
                     <small>Find us on map</small>
                 </p>
             </div>
-            <div>
+            <div class="footer-Contact_info-contact">
                 <span><i class="bi bi-envelope-paper"></i></span>
                 <p>
                     <span>Contact & Appointment</span>
                     <small>Send us an email</small>
                 </p>
             </div>
-            <div>
+            <div class="footer-Contact_info-telephone">
                 <span><i class="bi bi-telephone"></i></span>
                 <p>
                     <span>Call Us  </span>
@@ -530,10 +571,66 @@
             </div>
         </section>
         <section class="footer-info">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div  class="footer-info-addressandContactDetails">
+                <img src="./images/logo.png" alt="">
+                <address>Pacesetter Bitek Estate, after DSTV Office, Onireke, Ibadan, Oyo State</address>
+                <p><i class="bi bi-telephone"></i> 0704-100-1717</p>
+                <p><i class="bi bi-envelope-paper"></i>trinitypharmacareltd@gmail.com</p>
+            </div>
+            <div class="footer-info-aboutUs">
+                <h1 id="footer-info-aboutUs-header"> About Us</h1>
+                <span>
+                    <i class="bi bi-arrow-right"></i>
+                    Our Mission
+                </span>
+                <span>
+                    <i class="bi bi-arrow-right"></i>
+                    Our Vision
+                </span>
+                <span>
+                    <i class="bi bi-arrow-right"></i>
+                    Our Core Values
+                </span>
+            </div>
+            <div class="footer-info-ourServices">
+                <h1 id="footer-info-ourServices-header">Our services</h1>
+                <span>
+                    <i class="bi bi-arrow-right"></i>
+                    Pregnatab Original Value Pack
+                </span>
+                <span>
+                    <i class="bi bi-arrow-right"></i>
+                    Pregnatab Original Starter Pack
+                </span>
+                <span>
+                    <i class="bi bi-arrow-right"></i>
+                    Pregnatab Original Travel Pack
+                </span>
+                <span>
+                    <i class="bi bi-arrow-right"></i>
+                    Pregnatab Conception Value Pack
+                </span>
+                <span>
+                    <i class="bi bi-arrow-right"></i>
+                    Pregnatab Conception Starter Pack
+                </span>
+                <span>
+                    <i class="bi bi-arrow-right"></i>
+                    Pregnatab Conception Travel Pack 
+                </span>
+            </div>
+            <div class="footer-info-hospitalHours">
+                <h1 id="footer-info-hospitalHours-header">Hospital Hours</h1>
+                <p>
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>Monday - Friday</span> 
+                    <span>08:00 am - 5:00 pm <small>&</small>09:00 am - 3:00 pm on Saturday</span>
+                </p>
+                <span class="footer-info-emergencyHour"><a href="#">Emergency : 24 hours</a></span>
+            </div>
         </section>
         <section class="copyright">
             <span class="copyright_socials">
@@ -560,10 +657,9 @@
                     </svg>
                 </a>
             </span>
-            <span>COPYRIGHT 2019 MEDHEIGHTS, ALL RIGHT RESERVED</span>
+            <span>COPYRIGHT 2023 Trinity Pharmacare, ALL RIGHT RESERVED</span>
         </section>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
