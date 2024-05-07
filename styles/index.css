@@ -565,11 +565,11 @@ width: 20%;
     height: max-content;
 }
 .coreValuesdetails{
-    width: 50%;
+    width: 100%;
     height: max-content;
     background-color: #f5f5f5;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding-left: 40px;
 }
 .coreValuesdetails h1{
@@ -677,6 +677,8 @@ width: 20%;
     }
     .coreValuesdetails{
         width: 100%;
+        padding-left: 10px;
+
     }
     .appointment{
         width: 100%;
@@ -1429,4 +1431,8 @@ width: 20%;
         align-items: center;
         height: 120px;
     }
+}
+
+.mywork{
+    z-index: 111111;
 }
