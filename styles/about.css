@@ -1,0 +1,230 @@
+html{
+    scroll-behavior: smooth;
+}
+.aboutMainContent{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    /* margin-bottom: 800px; */
+}
+.detailsAboutUs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:900px;
+    position: relative;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.detailsAboutUs_imageSection{
+    width: 100%;
+    height: 200px;
+    background-image: url('../images/surgical-procedure-made-by-doctor-special-equipment.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 0px -150px ;
+}
+.detailsAboutUs_imageSectionCover{
+    width: 100%;
+    height: 100%;
+    background-color: #007dbc;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+.detailsAboutUs_maincontent{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    top: 10%;
+}
+#detailsAboutUs_maincontentHeader{
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    align-self: flex-start;
+    margin-left: 135px;
+}
+.detailsAboutUs_maincontent-textContainer{
+    display: flex;
+    width: 80%;
+    height: max-content;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.336);
+
+}
+
+.detailsAboutUs_maincontent-textContainerImg{
+    flex: 1;
+    height: max-content;
+}
+.detailsAboutUs_maincontent-textContainerImg img{
+    width: 100%;
+    height: 700px;
+}
+.detailsAboutUs_maincontent-text{
+    flex: 1;
+    height: 700px;
+    padding: 20px;
+}
+#detailsAboutUs_maincontent-text_h{
+    color: black;
+    font-weight: 500;
+    font-size: 36px;
+}
+.detailsAboutUs_maincontent_p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+#aboutMission, #aboutVison{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+#aboutMissionContainer_h, #aboutVisonContainer_h{
+    font-weight: 600;
+    font-size: 36px;
+    color: black;
+    margin-bottom: 30px
+}
+.aboutMissionContainer_textAndImg, .aboutVisonContainer_textAndImg{
+    width: 100%;
+    display: flex;
+    height: max-content;
+}
+.aboutVisonContainer_textAndImg{
+    flex-direction: row-reverse;
+}
+.aboutMissionContainer_Img, .aboutVisonContainer_Img{
+    flex: 1;
+    height: max-content;
+}
+.aboutMissionContainer_Img img, .aboutVisonContainer_Img img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.aboutMissionContainer_text, .aboutVisonContainer_text{
+    flex: 1;
+    height: 400px;
+
+}
+#aboutMissionContainer_text-h, #aboutVisionContainer_text-h{
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+}
+.aboutMissionContainer_text p, .aboutVisonContainer_text p{
+    margin-top: 20px;
+}
+#aboutValues{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+@media screen and (max-width:450px){
+    .detailsAboutUs{
+        height:650px;
+    }
+    .detailsAboutUs_imageSection{
+        background-position: 0px -10px ;
+    }
+    .detailsAboutUs_maincontent{
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        top: 2%;
+    }
+    #detailsAboutUs_maincontentHeader{
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    .detailsAboutUs_maincontent-textContainer{
+        width: 95%;
+    
+    }
+    
+    .detailsAboutUs_maincontent-textContainerImg{
+        display: none;
+    }
+    .detailsAboutUs_maincontent-text{
+        flex: 1;
+        height: max-content;
+        padding: 20px;
+    }
+    #detailsAboutUs_maincontent-text_h{
+        font-size: 24px;
+    }
+    .detailsAboutUs_maincontent_p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .detailsAboutUs_maincontent_p:nth-child(3), .detailsAboutUs_maincontent_p:nth-child(4), .detailsAboutUs_maincontent_p:nth-child(5){
+        display: none;
+    }
+    #aboutMission, #aboutVison{
+        padding: 20px;
+    }
+    #aboutMissionContainer_h, #aboutVisonContainer_h{
+        font-weight: 600;
+        font-size: 36px;
+        color: black;
+        margin-bottom: 10px
+    }
+    .aboutMissionContainer_textAndImg, .aboutVisonContainer_textAndImg{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    .aboutVisonContainer_textAndImg{
+        flex-direction: column;
+    }
+    .aboutMissionContainer_Img, .aboutVisonContainer_Img{
+        flex: 1;
+        height: max-content;
+    }
+    .aboutMissionContainer_Img img, .aboutVisonContainer_Img img{
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+    .aboutMissionContainer_text, .aboutVisonContainer_text{
+        flex: 1;
+        height: 400px;
+    
+    }
+    #aboutMissionContainer_text-h, #aboutVisionContainer_text-h{
+        font-size: 24px;
+        font-weight: 500;
+        color: black;
+    }
+    .aboutMissionContainer_text p, .aboutVisonContainer_text p{
+        margin-top: 20px;
+    }
+}
+/* #aboutMission, #aboutVision, #aboutValues{
+    width: 100%;
+    margin-bottom: 40px;
+    height: 700px;
+} */
+/* #aboutMission{
+    background-color: red;
+}
+#aboutVision{
+    background-color: green;
+}
+#aboutValues{
+    background-color: orange;
+} */
