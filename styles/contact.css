@@ -133,7 +133,8 @@
         flex-direction: column;
         flex: 1;
         height: 300px;
-        background-color: #5ae500;
+        background-color: #06175d;
+        border: none;
         justify-content: center;
         align-items: center;
         padding-top: 20px;
