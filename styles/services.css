@@ -124,3 +124,29 @@
 .abegnah span{
     color: rgba(0, 0, 0, 0.781);
 }
+@media screen and (max-width:450px){
+    .services_mainContent_landingview{
+    background-position: 0px 0px;
+
+    }
+    .services_mainContentDetails-container{
+        width: 95%;
+    }
+    .services_mainContent_offeredServices{
+        flex-direction: column;
+    }
+    .services_mainContent_offeredServices div{
+        width: 100%;
+    }
+    .services_mainContent_offeredServices div span:nth-child(1){
+        width: 17%;
+        height: 50%;
+    }
+    #services_mainContent_offeredServices-details_h{
+        font-size: 20px;
+    }
+    #consultancy{
+        width: 23%;
+        height: 50%;
+    }
+}
