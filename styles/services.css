@@ -1,0 +1,126 @@
+.services_mainContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.services_mainContent_landingview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/surgical-procedure-made-by-doctor-special-equipment.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -150px;
+    position: relative;
+}
+.services_mainContent_landingview_cover{
+    opacity: 0.7;
+    background-color: #007dbc;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+#services_mainContent_landingview_h{
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    z-index: 1;
+}
+.services_mainContent_landingview span{
+    color: white;
+    font-weight: 500;
+    z-index: 1;
+    font-size: 24px;
+}
+.services_mainContentDetails-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 50px;
+    border-radius: 8px;
+    height: max-content;
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+}
+.services_mainContent_offeredServices{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.418);
+
+}
+.services_mainContent_offeredServices div{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.services_mainContent_offeredServices div span:nth-child(1){
+    width: 15%;
+    height: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #5ae500;
+    
+}
+.services_mainContent_offeredServices div span:nth-child(1) svg{
+    color: white;
+}
+#services_mainContent_offeredServices-details_h{
+    font-size: 24px;
+    font-weight: 600;
+}
+.services_mainContent_offeredServices-details{
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.services_mainContent_offeredServices-details div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services_mainContent_offeredServices-details div h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+.services_mainContent_offeredServices-details div p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.781);
+}
+.abegnah{
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    gap: 10px;
+    padding: 30px;
+    margin-top: -20px;
+}
+.abegnah h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.abegnah li{
+    color: rgba(0, 0, 0, 0.781);
+}
+.abegnah span{
+    color: rgba(0, 0, 0, 0.781);
+}
