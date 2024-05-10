@@ -129,6 +129,12 @@
     background-position: 0px 0px;
 
     }
+    #services_mainContent_landingview_h{
+        font-size: 48px;
+    }
+    .services_mainContent_landingview span{
+        font-size: 24px;
+    }
     .services_mainContentDetails-container{
         width: 95%;
     }
