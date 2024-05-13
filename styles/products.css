@@ -1,0 +1,279 @@
+.product_mainContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.product_mainContent_landingview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/surgical-procedure-made-by-doctor-special-equipment.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -150px;
+    position: relative;
+}
+.product_mainContent_landingview_cover{
+    opacity: 0.7;
+    background-color: #007dbc;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+#product_mainContent_landingview_h{
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    z-index: 1;
+}
+.product_mainContent_landingview span{
+    color: white;
+    font-weight: 500;
+    z-index: 1;
+    font-size: 24px;
+}
+.product_mainContent_veiwcontent{
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+.product_mainContent_veiwcontent div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.product_mainContent_veiwcontent div:nth-child(1) p{
+    font-size: 34px;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+.product_mainContent_veiwcontent div:nth-child(1) span{
+    color: gray;
+    margin-left: 50px;
+    padding-right: 150px;
+}
+.product_mainContent_veiwcontent div:nth-child(1) a{
+    margin-left: 50px;
+    width: max-content;
+    padding:10px;
+    margin-top: 20px;
+    border: 3px solid #007dbc;
+    font-weight:500 ;
+    color: #007dbc;
+    transition: all .5s ease-in-out;
+    transform-origin: 100%;
+}
+.product_mainContent_veiwcontent div:nth-child(1) a:hover{
+    border: 3px solid #5ae500;
+    background-color:#5ae500 ;
+    color: white;
+
+}
+.product_mainContent_veiwcontent div:nth-child(2){
+    height: 400px;
+}
+.product_mainContent_veiwcontent div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.product_mainContent_brands{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.product_mainContent_brands-container{
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+.product_mainContent_brands-container_brands-generics{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    flex: 1;
+    border: 1px solid rgba(128, 128, 128, 0.212);
+    padding: 10px;
+    border-radius: 4px;
+}
+.product_mainContent_brands-container_brands-generics_groupOne{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+    padding-bottom: 10px;
+}
+.product_mainContent_brands-container_brands-generics_groupOne div{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.199);
+    height: 40px;
+    border-radius: 4px;
+    background-color: #007dbc;
+}
+.product_mainContent_brands-container_brands-generics_groupOne div a{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.product_mainContent_brands-container_brands-generics_groupOne div:hover{
+    background-color: #5ae500;
+}
+.product_mainContent_brands-container_brands-generics_groupTwo{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+}
+#Generics p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.genericsDetails{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.brandsDetails{
+    display: none;
+}
+.OTCDetails{
+    display: none;
+}
+.product_mainContent_brands-container_brands-generics_groupOne .fade_in{
+    background-color:#5ae500;
+}
+#product_mainContent_brands-H{
+    font-size: 20px;
+
+}
+.product_mainContent_brands-modeOfPayments{
+    flex: 1;
+    height: max-content;
+    padding-left: 10px;
+}
+#FAQ{
+    text-align: start;
+    font-weight: 600;
+    font-size: 24px;
+}
+.product_mainContent_brands-modeOfPayments details{
+    border-radius: 4px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.075);
+    margin-bottom: 5px;
+}
+
+.product_mainContent_brands-modeOfPayments details>summary {
+    list-style-type: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+  
+.product_mainContent_brands-modeOfPayments details>summary::-webkit-details-marker {
+    display: none;
+  }
+.product_mainContent_brands-modeOfPayments details>summary::before {
+    content: '+ ';
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgba(128, 128, 128, 0.089);
+    border-radius: 4px;
+    transition: 0.1s ease-in-out;
+
+}
+.product_mainContent_brands-modeOfPayments details>summary span{
+    font-size: 15px;
+    display: flex;
+    width: 70%;
+
+}
+.product_mainContent_brands-modeOfPayments details p{
+    font-size: 15px;
+}
+.product_mainContent_brands-modeOfPayments details:hover summary{
+    color: #5ae500;
+}
+.product_mainContent_brands-modeOfPayments details[open]>summary::before {
+    content: '- ';
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  rgba(128, 128, 128, 0.089);
+    background-color:white;
+    border-radius: 4px;
+}
+@media screen and (max-width:450px){
+    .product_mainContent_landingview{
+        background-position: 0px 0px;
+    }
+    #product_mainContent_landingview_h{
+        font-size: 48px;
+    }
+    .product_mainContent_landingview span{
+        font-size: 24px;
+    }
+    .product_mainContent_veiwcontent{
+        flex-direction: column;
+    }
+    .product_mainContent_veiwcontent div:nth-child(1) p{
+        font-size: 24px;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 20px;
+    
+    }
+    .product_mainContent_veiwcontent div:nth-child(1) span{
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+    .product_mainContent_veiwcontent div:nth-child(1) a{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .product_mainContent_brands-container{
+        flex-direction: column;
+    }
+    .product_mainContent_brands-container_brands-generics_groupOne{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .product_mainContent_brands-container_brands-generics_groupOne div{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+}

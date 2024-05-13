@@ -7,10 +7,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/about.css">
+    <script src="../script/products.js" defer></script>
+    <link rel="stylesheet" href="../styles/products.css">
     <link rel="shortcut icon" href="../images/TRITRI.png" type="image/x-icon">
-    <title>TRINITY PHARMACARE - About Us </title>
-
+    <title>TRINITY PHARMACARE - Products</title>
 </head>
 
 <body>
@@ -41,13 +41,13 @@
                     class="flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:text-sm  md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-8 md:rtl:space-x-reverse">
                     <li>
                         <a href="../index.html"
-                            class="block py-2 px-3 text-gray-700 md:hover:text-blue-700 rounded md:hover:bg-transparent md:bg-transparent md:text-gray-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent hover:bg-gray-100"
-                            >Home</a>
+                            class="block py-2 px-3 text-gray-700 hover:bg-gray-100 md:hover:text-blue-700 md:hover:bg-transparent rounded md:bg-transparent md:text-gray-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                            aria-current="page">Home</a>
                     </li>
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="flex items-center justify-between w-full py-2 px-3 text-white rounded md:hover:bg-transparent md:bg-transparent md:border-0 md:text-blue-700 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent bg-blue-700" aria-current="page">About
-                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">About<svg
+                                class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
@@ -58,22 +58,22 @@
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
-                                    <a href="about.html"
+                                    <a href="./about.html"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About
                                         Us</a>
                                 </li>
                                 <li>
-                                    <a href="#aboutMission"
+                                    <a href="./about.html#aboutMission"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
                                         Mission</a>
                                 </li>
                                 <li>
-                                    <a href="#aboutVison"
+                                    <a href="about.html#aboutVision"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
                                         Vision</a>
                                 </li>
                                 <li>
-                                    <a href="#aboutValues"
+                                    <a href="about.html#aboutValues"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
                                         Core Values</a>
                                 </li>
@@ -82,7 +82,7 @@
                     </li>
                     <li>
                         <a href="./products.html"
-                            class="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:bg-transparent md:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
                     </li>
                     <li>
                         <a href="./services.html"
@@ -91,7 +91,8 @@
                     </li>
                     <li>
                         <button id="dropdownLargeButton" data-dropdown-toggle="dropdownLarge"
-                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Order<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Order<svg
+                                class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
@@ -103,12 +104,14 @@
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Order Now</a>
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Order
+                                        Now</a>
                                 </li>
                             </ul>
                             <div class="py-1">
                                 <a href="#"
-                                    class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Become a Customer</a>
+                                    class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Become
+                                    a Customer</a>
                             </div>
                         </div>
                     </li>
@@ -124,154 +127,104 @@
             </div>
         </div>
     </nav>
-    <main class="aboutMainContent">
-        <div class="detailsAboutUs">
-            <div class="detailsAboutUs_imageSection">
-                <div class="detailsAboutUs_imageSectionCover"></div>
+    <main class="product_mainContent">
+        <div class="product_mainContent_landingview">
+            <div class="product_mainContent_landingview_cover"></div>
+            <h1 id="product_mainContent_landingview_h">Our Products</h1>
+            <span>Discover Our Products</span>
+        </div>
+        <div class="product_mainContent_veiwcontent">
+            <div>
+                <p>Products you need
+                    <br> At the prices you want
+                </p>
+                <span>We have strategically developed our portfolio of brand, generic and consumer products to suit your
+                    needs.</span>
+                <a href="#productList">VIEW ALL PRODUCTS</a>
             </div>
-            <div class="detailsAboutUs_maincontent">
-                <h1 id="detailsAboutUs_maincontentHeader">About Us</h1>
-                <div class="detailsAboutUs_maincontent-textContainer">
-                    <div class="detailsAboutUs_maincontent-textContainerImg">
-                        <img src="../images/front-view-pharmacist-wearing-face-mask.jpg" alt="">
+            <div>
+                <img src="../images/pharmacy.jpg" alt="">
+            </div>
+        </div>
+        <div class="product_mainContent_brands">
+            <h1 id="product_mainContent_brands-H">Brands and Generics</h1>
+            <div class="product_mainContent_brands-container">
+                <div class="product_mainContent_brands-container_brands-generics">
+                    <div class="product_mainContent_brands-container_brands-generics_groupOne">
+                        <div class="product_mainContent_brands-container_generics" id="Generics"
+                            onclick="displayGeneries()" class="fade_in"><a href="#" class="brandSwitch">Generics</a>
+                        </div>
+                        <div class="product_mainContent_brands-container_brands" id="Brands" onclick="displayBrands()">
+                            <a href="#" class="brandSwitch">Brands</a></div>
+                        <div class="product_mainContent_brands-container_OTC" id="OTC" onclick="displayOTC()"><a
+                                href="#" class="brandSwitch">Over the Counter (OTC)</a></div>
                     </div>
-                    <div class="detailsAboutUs_maincontent-text">
-                        <h1 id="detailsAboutUs_maincontent-text_h">Our Story</h1>
-                        <p class="detailsAboutUs_maincontent_p">Trinity Pharmacare Limited, founded on January 29th,
-                            2023, is a reputable pharmaceutical company headquartered in the vibrant city of Ibadan, Oyo
-                            State. Conveniently located in Pacesetter Bitek Estate, just after the DSTV Office in
-                            Onireke, we have established ourselves as a trusted name in the industry.</p>
-                        <p class="detailsAboutUs_maincontent_p">With a primary focus on wholesale, distribution, and
-                            marketing of pharmaceutical products and medical supplies, we are committed to providing
-                            essential healthcare solutions to our community and beyond.</p>
-                        <p class="detailsAboutUs_maincontent_p">At Trinity Pharmacare, we believe in upholding the
-                            highest standards of integrity, ensuring that honesty, transparency, and fairness are at the
-                            core of all our operations. Our dedication to quality drives us to continuously innovate and
-                            improve, guaranteeing that our products and services meet the stringent requirements of the
-                            healthcare industry.</p>
-                        <p class="detailsAboutUs_maincontent_p">Customer satisfaction is our top priority. We are deeply
-                            committed to understanding and exceeding the needs of our customers, building long-lasting
-                            relationships based on trust and reliability.</p>
-                        <p class="detailsAboutUs_maincontent_p">Driven by a passion for excellence, we are constantly
-                            striving to set new benchmarks in the industry, delivering outstanding results in everything
-                            we do. At Trinity Pharmacare Limited, we are more than just a pharmaceutical company; we are
-                            your partners in health, dedicated to making a positive difference in the lives of those we
-                            serve.</p>
+                    <div class="product_mainContent_brands-container_brands-generics_groupTwo">
+                        <div id="genericsDetails" class="genericsDetails">
+                            <p>
+                                Let Safco Mega Solutions be the one source for all your generic needs. We leverage
+                                optimal buying power to offer our customers unmatched, competitive prices on a wide
+                                range of the most popular available generics healthcare products.
+                            </p>
+                            <p>
+                                We offer our customers inventory staples, new launches and hard-to-find generics. So
+                                quit wasting your valuable time shopping around, and let Safco Mega Solutions provide
+                                the generic products you need at the prices you want.</p>
+                        </div>
+                        <div id="brandsDetails" class="brandsDetails">
+                            <p>
+                                Our product portfolio offers market-competitive pricing on brand name prescription
+                                products. We distribute the top fast-moving brand products in the industry while
+                                maximizing your profit potential.
+                            </p>
+                        </div>
+                        <div id="OTCDetails" class="OTCDetails">
+                            <p>
+                                Our private label, Quality Choice, gives your front end a competitive advantage. We
+                                offer products that are equivalents to top brands at significant savings, thereby giving
+                                you access to a complete line of health products.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_mainContent_brands-modeOfPayments">
+                    <h1 id="FAQ">Modes of Payments</h1>
+                    <details>
+                        <summary><span>Cash Payments</span></summary>
+                        <p><strong>Attracts a 1% discount on total purchase when you pay instantly</strong>
+                            Customers will receive a 1% discount when they pay for their purchases by cash. For example
+                            a customer with a sales invoice total of ₦500, 000 will receive a discount of ₦5, 000 when
+                            he/she makes cash payment.</p>
+                    </details>
+                    <details>
+                        <summary><span>Cheque Payment</span></summary>
+                        <p>Payment can also be made by the issue of a recognised bank cheque in favour of
+                            <strong>trinity pharmacare ltd</strong>. Please <em>ignore</em> any request by any employee
+                            of Safco Mega Solution to issue the cheques in their names. Please note that this payment
+                            option does not attract any form sales discounts or cash backs.</p>
+                    </details>
+                    <details>
+                        <summary><span>Electronic Transfer</span></summary>
+                        <p><strong> a 1% discount on total purchase when you transfer immediately upon
+                                purchase.</strong>
+                            Just like the cash payment, an instant and verified electronic transfer to our Safco Mega
+                            Solutions bank account will also attract a 1% discount. Please ignore any request by any
+                            employee of Safco Mega Solutions to make instant or any other form of transfers to their
+                            accounts.</p>
+                    </details>
+                    <details>
+                        <summary><span>Debit/Credit Card</span></summary>
+                        <p>We accept all forms of major credit cards such as VISA, MASTERCARD and VERVE and like the
+                            cash payment option; a successful transaction will also attract a <strong>1%
+                                discount</strong>.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+        <div class="product_mainContent_productList" id="productList">
 
-                    </div>
-                </div>
-            </div>
         </div>
-        <div id="aboutMission">
-            <div class="aboutMissionContainer">
-                <h1 id="aboutMissionContainer_h">Our Mission</h1>
-                <div class="aboutMissionContainer_textAndImg">
-                    <div class="aboutMissionContainer_Img">
-                        <img src="../images/business-mission-mission-statement-business-goals-and-philosophy-company-vision-core-values-customer-engagement-loyalty-and-satisfaction-flat-design-modern-illustration-vector.jpg"
-                            alt="">
-                    </div>
-                    <div class="aboutMissionContainer_text">
-                        <h1 id="aboutMissionContainer_text-h">Mission Statement</h1>
-                        <p>To partner with health stakeholders across the nation with the aim of improving the wellbeing
-                            and health of people by offering access to needed drug products to all our customers.</p>
-                        <p>We are dedicated to ensuring that everyone has access to high-quality, affordable
-                            medications, regardless of their location or socioeconomic status.</p>
-                        <p>Through our partnerships and distribution network, we strive to bridge the gap between
-                            healthcare providers and patients, ensuring that essential medications are readily available
-                            when needed the most.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="aboutVison">
-            <div class="aboutVisonContainer">
-                <h1 id="aboutVisonContainer_h"> Our Vision</h1>
-                <div class="aboutVisonContainer_textAndImg">
-                    <div class="aboutVisonContainer_Img">
-                        <img src="../images/WhatsApp Image 2024-05-08 at 07.51.14.jpeg" alt="">
-                    </div>
-                    <div class="aboutVisonContainer_text">
-                        <h1 id="aboutVisionContainer_text-h">Vison Statement</h1>
-                        <p>To become a leading provider of pharmaceutical products and medical supplies, known for our
-                            commitment to integrity, quality, and customer satisfaction, while making a positive impact
-                            on the health and wellbeing of our community.</p>
-                        <p>We envision a future where everyone has access to the medications they need to live
-                            healthier, happier lives, and we are dedicated to making this vision a reality through our
-                            unwavering dedication and hard work. </p>
-                        <p> By fostering strong partnerships with healthcare stakeholders, we aim to create a healthier
-                            nation where no one is left behind in their pursuit of good health.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="aboutValues">
-            <div class="coreValuesdetails">
-                <h1>OUR CORE VALUES </h1>
-                <div>
-                    <img src="../images/values (1).png" alt="" srcset="">
-                    <span>Integrity
-                        <small>
-                            At trinity pharmacare, we believe in upholding the highest standards of integrity, ensuring
-                            honesty, transparency, and fairness in all our interactions.
-                        </small>
-                    </span>
-                </div>
-                <div>
-                    <img src="../images/values (1).png" alt="" srcset="">
-                    <span>Trust in God
-                        <small>
-                            Guided by our trust in God, we approach our work with faith, knowing that with His guidance,
-                            we can overcome any challenge.
-                        </small>
-                    </span>
-                </div>
-                <div>
-                    <img src="../images/values (1).png" alt="" srcset="">
-                    <span>Customer Focus
-                        <small>
-                            We are dedicated to understanding and exceeding the needs of our customers, placing their
-                            satisfaction at the forefront of everything we do.
-                        </small>
-                    </span>
-                </div>
-                <div>
-                    <img src="../images/values (1).png" alt="" srcset="">
-                    <span>Quality
-                        <small>
-                            Quality is our commitment. We strive for excellence in every aspect of our work, ensuring
-                            that our products and services consistently meet the highest standards.
-                        </small>
-                    </span>
-                </div>
-                <div>
-                    <img src="../images/values (1).png" alt="" srcset="">
-                    <span>Excellence
-                        <small>
-                            Excellence is our standard. We continuously challenge ourselves to innovate and improve,
-                            setting new benchmarks for success in our industry.
-                        </small>
-                    </span>
-                </div>
-                <div>
-                    <img src="../images/values (1).png" alt="" srcset="">
-                    <span>Teamwork
-                        <small>
-                            We believe in the power of collaboration and teamwork, leveraging the diverse talents of our
-                            team to achieve our goals efficiently and effectively.
-                        </small>
-                    </span>
-                </div>
-                <div>
-                    <img src="../images/values (1).png" alt="" srcset="">
-                    <span>Reliability
-                        <small>
-                            Our commitment to reliability means that our customers and partners can always count on us
-                            to deliver on our promises, consistently and without fail.
-                        </small>
-                    </span>
-                </div>
-            </div>
-        </div>
+        <div></div>
     </main>
     <footer class="footer_Details">
         <section class="footer-Contact_info">
@@ -307,15 +260,15 @@
             </div>
             <div class="footer-info-aboutUs">
                 <h1 id="footer-info-aboutUs-header"> About Us</h1>
-                <a href="#aboutMission">
+                <a href="./about.html#aboutMission">
                     <i class="bi bi-arrow-right"></i>
                     Our Mission
                 </a>
-                <a href="#aboutVison">
+                <a href="./about.html#aboutVison">
                     <i class="bi bi-arrow-right"></i>
                     Our Vision
                 </a>
-                <a href="#aboutValues">
+                <a href="./about.html#aboutValues">
                     <i class="bi bi-arrow-right"></i>
                     Our Core Values
                 </a>
@@ -335,61 +288,61 @@
                     Strategically Promoting Health & Wellness
                 </a>
             </div>
-            v class="footer-info-hospitalHours">
-            <h1 id="footer-info-hospitalHours-header">Hospital Hours</h1>
-            <p>
-                <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>Monday <em> - </em><small>08:00 am - 5:00 pm</small></span>
+            <footer class="footer-info-hospitalHours">
+                <h1 id="footer-info-hospitalHours-header">Hospital Hours</h1>
+                <p>
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>Monday <em> - </em><small>08:00 am - 5:00 pm</small></span>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
                         Tuesday <em> - </em><small>08:00 am - 5:00 pm</small>
                     </span>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
                         Wednesday <em> - </em><small>08:00 am - 5:00 pm</small>
 
                     </span>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
                         Thursday <em> - </em><small>08:00 am - 5:00 pm</small>
 
                     </span>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
                         Friday <em> - </em><small>08:00 am - 5:00 pm</small>
 
                     </span>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
                         Saturday <em> - </em><small>09:00 am - 3:00 pm</small>
 
                     </span>
-            </p>
-            <!-- <span class="footer-info-emergencyHour"><a href="#">Emergency : 24 hours</a></span> -->
-        </div>
+                </p>
+                <!-- <span class="footer-info-emergencyHour"><a href="#">Emergency : 24 hours</a></span> -->
+                </div>
         </section>
         <section class="copyright">
             <span class="copyright_socials">
