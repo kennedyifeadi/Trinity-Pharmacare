@@ -130,6 +130,7 @@
     font-weight: 600;
     color: white;
     transition: 0.5s ease-in-out;
+
 }
 .product_mainContent_brands-container_brands-generics_groupOne div:hover{
     background-color: #5ae500;
@@ -140,20 +141,21 @@
     height: max-content;
     width: 100%;
 }
-#Generics p{
-    font-size: 15px;
-    margin-top: 20px;
-}
 .genericsDetails{
     display: flex;
     gap: 20px;
     flex-direction: column;
+    font-size: 15px;
 }
 .brandsDetails{
     display: none;
+    font-size: 15px;
+
 }
 .OTCDetails{
     display: none;
+    font-size: 15px;
+
 }
 .product_mainContent_brands-container_brands-generics_groupOne .fade_in{
     background-color:#5ae500;

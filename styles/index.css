@@ -47,6 +47,8 @@ body{
     height: max-content;
     display: flex;
     gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 .h_info-time svg, .h_info-phone svg, .h_info-email svg{
     width: 20px;
@@ -416,8 +418,9 @@ width: 20%;
 }
 
 .carouselItem{
-    background-color: #007dbc;
-    width: 60%;
+    background: rgb(0,125,188);
+background: linear-gradient(270deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%);
+width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -426,6 +429,9 @@ width: 20%;
 }
 .carouselItemTwo{
     background-color: #007dbc;
+    
+    background: rgb(0,125,188);
+background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%);
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -479,8 +485,8 @@ width: 20%;
     z-index: 111;
     width: 80%;
     height: 250px;
-    background-color: #036ea3;
     border-radius: 4px;
+    background-color: #007dbc;
     display: flex;
     margin-left: 10%;
 }
@@ -494,7 +500,7 @@ width: 20%;
     gap: 10px;
     margin-bottom: 20px;
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
 }
 .missonStatement span:nth-child(2), .visionStatement span:nth-child(2){
@@ -503,15 +509,15 @@ width: 20%;
 }
 .missonStatement span:nth-child(3){
     color: #fff;
-    font-weight: 700;
-    font-size: 22px;
+    font-weight: 400;
+    font-size: 15px;
 }
 .visionStatement span:nth-child(3){
     display: flex;
     justify-content: space-between;
     color: #fff;
-    font-weight: 500;
-    font-size: 22px;
+    font-weight: 400;
+    font-size: 18px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ffffff69;
 }
@@ -520,7 +526,7 @@ width: 20%;
     gap: 5px;
 }
 .visionStatement span:nth-child(3) small:nth-child(2){
-    font-weight: 800;
+    font-weight: 400;
 }
 @media screen and (max-width:450px){
     .carouselItem{
@@ -529,6 +535,7 @@ width: 20%;
         top: 0;
         width: 100%;
         background-color: #007dbc67;
+        background: linear-gradient(90deg, #007dbc67 0%, rgba(87, 199, 255, 0.24) 100%);
     }
     .carouselItemTwo{
         /* display: none; */
@@ -536,6 +543,7 @@ width: 20%;
         top: 0;
         width: 100%;
         background-color: #007dbc67;
+        background: linear-gradient(90deg, #007dbc67 0%, rgba(87, 199, 255, 0.24) 100%);
         align-items: flex-end;
         text-align: end;
 
@@ -563,7 +571,7 @@ width: 20%;
     }
 }
 .main_ContentTwo{
-    margin-top: 50px;
+    margin-top: 180px;
     display: flex;
     width: 100%;
     height: max-content;
@@ -676,7 +684,7 @@ width: 20%;
 }
 @media screen and (max-width:450px){
     .main_ContentTwo{
-        margin-top: 40px;
+        margin-top: 380px;
         flex-direction: column;
     }
     .coreValuesdetails{
@@ -811,12 +819,12 @@ width: 20%;
         align-items: center;
     }
     .product-cards{
-        width: 80%;
+        width: 98%;
         margin-bottom: 40px;
     }
 }
 .main_Contentfour{
-    width: 90%;
+    width: 94%;
     height: max-content;
     display: flex;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
@@ -960,9 +968,9 @@ width: 20%;
     }
 }
 .main_ContentFive{
-    width: 90%;
+    width: 100%;
     height: max-content;
-    margin-top: 200px;
+    margin-top: 50px;
     padding: 30px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.26);
 }
@@ -975,6 +983,7 @@ width: 20%;
     margin-bottom: 20px;
     border-radius: 4px;
     padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.075);
 }
 
 .main_ContentFive details>summary {
@@ -996,8 +1005,8 @@ width: 20%;
   }
 .main_ContentFive details>summary::before {
     content: '+ ';
-    height: 60px;
-        width: 60px;
+    height: 30px;
+        width: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1016,8 +1025,8 @@ width: 20%;
 .main_ContentFive details[open]>summary::before {
     content: '- ';
     margin-right: 20px;
-    height: 60px;
-        width: 60px;
+    height: 30px;
+        width: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1031,10 +1040,11 @@ width: 20%;
 }
 .main_ContentFive details p{
     margin-bottom: 20px;
+    margin-left: 53px;
 }
 @media screen and (max-width:450px){
     .main_ContentFive{
-        width: 95%;
+        width: 100%;
         margin-top: 10px;
         padding: 10px;
     }
@@ -1049,7 +1059,7 @@ width: 20%;
     }
     .main_ContentFive details>summary span{
         font-size: 15px;
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1060,8 +1070,8 @@ width: 20%;
       }
     .main_ContentFive details>summary::before {
         content: '+ ';
-        height: 60px;
-        width: 60px;
+        height: 30px;
+        width: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1074,8 +1084,8 @@ width: 20%;
       
     .main_ContentFive details[open]>summary::before {
         content: '- ';
-        height: 60px;
-        width: 60px;
+        height: 30px;
+        width: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1248,6 +1258,7 @@ width: 20%;
     flex: 1;
     gap: 20px;
     height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.082);
 }
 .footer-Contact_info-location{
     background-image: url('../images/close-up-veterinarian-doing-some-tests.jpg');
@@ -1267,7 +1278,7 @@ width: 20%;
 }
 .footer-Contact_info div span{
     color: white;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 600;
     z-index: 1;
 }
@@ -1278,7 +1289,7 @@ width: 20%;
 }
 .footer-Contact_info div p span{
     color: rgba(255, 255, 255, 0.507);
-    font-size: 20px;
+    font-size: 18px;
 }
 .footer-Contact_info div p small{
     color: white;
@@ -1324,7 +1335,7 @@ width: 20%;
     
 } */
 #footer-info-aboutUs-header, #footer-info-ourServices-header, #footer-info-hospitalHours-header{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -1348,21 +1359,21 @@ width: 20%;
 }
 .footer-info-hospitalHours p span{
     display: flex;
-    font-weight: 700;
+    font-weight: 400;
     color: #007dbc;
     margin-bottom: 10px;
     font-size: 13px;
     justify-content: space-between;
     align-items: center;
 }
-.footer-info-hospitalHours p span svg{
-    width: 8%;
-    margin-right: 3px;
-}
 
+.footer-info-hospitalHours p span small:nth-child(1){
+    font-size: 13px;
+    width: 40%;
+}
 .footer-info-hospitalHours p span small{
     font-size: 13px;
-    justify-self: flex-end;
+    font-weight: 400;
 }
 .footer-info-emergencyHour{
     width: 80%;
@@ -1381,8 +1392,9 @@ width: 20%;
 .copyright{
     width: 100%;
     display: flex;
+    flex-direction: column;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 70px;
 }
@@ -1397,6 +1409,7 @@ width: 20%;
 
 .copyright span{
     color: rgba(128, 128, 128, 0.623);
+    text-transform: capitalize;
 }
 @media screen and (max-width:450px){
     .footer_Details{
@@ -1412,9 +1425,11 @@ width: 20%;
         justify-content: center;
         width: 100%;
         gap: 20px;
+        border-left: none;
+        border-bottom:1px solid rgba(0, 0, 0, 0.082) ;
     }
     .footer-info{
-        height: 1200px;
+        height:1000px;
         flex-direction: column;
     }
     .footer-info div{
@@ -1435,9 +1450,14 @@ width: 20%;
         justify-content: space-between;
         align-items: center;
         height: 120px;
+        font-size: 15px;
     }
 }
 
 .mywork{
     z-index: 111111;
+}
+#dropdownNavbarLink:hover #dropdownNavbar{
+    display: block;
+    z-index: 11111111111111111111111111111111111111111111111111111111111111111;
 }
