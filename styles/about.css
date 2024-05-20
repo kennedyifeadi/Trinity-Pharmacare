@@ -63,6 +63,63 @@ html{
 
 }
 
+.ourcommitmentandSpecialties{
+    margin-top: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    padding-bottom: 15px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+}
+.ourcommitmentandSpecialties div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 450px;
+    background-color: #007dbc62;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.466);
+}
+.ourcommitmentandSpecialties div img{
+    width: 20%;
+}
+.ourcommitmentandSpecialties div h1{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.685);
+    font-weight: 800;
+}
+.ourcommitmentandSpecialties div p{
+    color: rgba(0, 0, 0, 0.863);
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .detailsAboutUs_maincontent-textContainerImg{
     flex: 1;
     height: max-content;
@@ -71,7 +128,9 @@ html{
     width: 100%;
     height: 700px;
     object-fit: cover;
-    object-position: 1px 0px;
+    border-top-left-radius:4px ;
+    border-bottom-left-radius:4px ;
+    object-position: -400px 0px;
 }
 .detailsAboutUs_maincontent-text{
     flex: 1;
@@ -95,11 +154,13 @@ html{
     height: max-content;
     justify-self: center;
 }
+#aboutMissionContainer_h{
+    text-align: end;
+}
 #aboutMissionContainer_h, #aboutVisonContainer_h{
     font-weight: 600;
     font-size: 36px;
     color: black;
-    margin-bottom: 30px
 }
 .aboutMissionContainer_textAndImg, .aboutVisonContainer_textAndImg{
     width: 100%;
@@ -123,13 +184,19 @@ html{
     height: 400px;
 
 }
+#aboutMissionContainer_text-h{
+    text-align: end;
+}
 #aboutMissionContainer_text-h, #aboutVisionContainer_text-h{
     font-size: 24px;
     font-weight: 500;
     color: black;
 }
+.aboutMissionContainer_text p{
+    text-align: end;
+}
 .aboutMissionContainer_text p, .aboutVisonContainer_text p{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #aboutValues{
     margin-top: 50px;

@@ -107,7 +107,7 @@
     color: black;
 }
 .contact_mainContent_leaveAMessage_header p{
-    color: rgba(128, 128, 128, 0.329);
+    color: rgba(128, 128, 128, 0.568);
     font-size: 24px;
 }
 .contact_mainContent_locateUs{
@@ -136,10 +136,10 @@
     border-radius: 4px;
 }
 .contact_mainContent_leaveAMessage_messageInput input::placeholder{
-    color: rgba(128, 128, 128, 0.527);
+    color: rgba(128, 128, 128, 0.699);
 }
 .contact_mainContent_leaveAMessage_messageInput textarea::placeholder{
-    color: rgba(128, 128, 128, 0.527);
+    color: rgba(128, 128, 128, 0.699);
 
 }
 .contact_mainContent_leaveAMessage_messageInput input[type ='submit']{

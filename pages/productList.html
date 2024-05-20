@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/services.css">
+    <link rel="stylesheet" href="../styles/products.css">
     <link rel="shortcut icon" href="../images/TRITRI.png" type="image/x-icon">
-    <title>TRINITY PHARMACARE - Services</title>
+    <link rel="stylesheet" href="../styles/productList.css">
+    <title>Trinity Pharmacare - product List</title>
 </head>
-
 <body>
     <header class="header">
         <div class="header_Container">
@@ -47,8 +46,8 @@
                             class="h_info-email_link">trinitypharmacareltd@gmail.com</a>
                     </small>
                 </span>
-            </div>
-            <div class="header_Socials">
+            </div> 
+    <div class="header_Socials">
                 <a href="https://web.facebook.com/profile.php?id=61554019042758" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-facebook" viewBox="0 0 16 16">
@@ -65,7 +64,7 @@
                     </svg>
                 </a>
             </div>
-        </div>
+     </div>
     </header>
     <nav class="bg-white border-gray-200 sticky top-0 dark:bg-gray-900 dark:border-gray-700 mywork">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2.5">
@@ -99,7 +98,7 @@
                     </li>
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" data-dropdown-trigger="hover"
-                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dropdownTesting"><a href="./about.html">About</a><svg
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a href="./about.html">About</a><svg
                                 class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -107,7 +106,7 @@
                             </svg></button>
                         <!-- Dropdown menu -->
                         <div id="dropdownNavbar"
-                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 dropdowntestingcontent">
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
@@ -132,15 +131,19 @@
                             </ul>
                         </div>
                     </li>
+                    <!-- <li>
+                        <a href="./products.html"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:bg-transparent md:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
+                    </li> -->
                     <li>
                         <button id="dropdownLeftButton" data-dropdown-toggle="dropdownLeft" data-dropdown-trigger="hover"
-                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a href="./products.html">Products</a><svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            class="flex items-center justify-between w-full py-2 px-3 text-white bg-blue-700 rounded hover:bg-gray-100  md:hover:text-blue-700 md:bg-transparent md:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a href="./products.html">Products</a><svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg></button>
                         <!-- Dropdown menu -->
-                        <div id="dropdownLeft"
+                        <div id="dropdownLeft" 
                             class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                 aria-labelledby="dropdownLargeButton">
@@ -153,7 +156,7 @@
                     </li>
                     <li>
                         <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox" data-dropdown-trigger="hover"
-                            class="flex items-center justify-between w-full py-2 px-3 text-white bg-blue-700 rounded hover:bg-gray-100  md:hover:text-blue-700 md:bg-transparent md:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a href="./services.html">Services</a><svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a href="./services.html">Services</a><svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
@@ -164,22 +167,22 @@
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
-                                    <a href="#wholesale"
+                                    <a href="./services.html#wholesale"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Wholesale</a>
                                 </li>
                                 <li>
-                                    <a href="#distribution"
+                                    <a href="./services.html#distribution"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Distribution</a>
                                 </li>
                                 <li>
-                                    <a href="#marketing"
+                                    <a href="./services.html#marketing"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Marketing</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <button id="dropdownLargeButton" data-dropdown-toggle="dropdownLarge" data-dropdown-trigger="hover"
+                        <button id="dropdownLargeButton" data-dropdown-toggle="dropdownLarge" data-dropdown-trigger="hover" 
                             class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Order<svg
                                 class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
@@ -216,105 +219,11 @@
             </div>
         </div>
     </nav>
-    <main class="services_mainContent">
-        <div class="services_mainContent_landingview">
-            <div class="services_mainContent_landingview_cover"></div>
-            <h1 id="services_mainContent_landingview_h">Our Services</h1>
-            <span>Explore What We Offer</span>
-        </div>
-        <div class="services_mainContentDetails-container">
-            <div class="services_mainContent_offeredServices">
-                <div>
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 md:w-12 md:h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
-                        </svg>
-
-                    </span>
-                    <span>
-                        <h3 id="services_mainContent_offeredServices-details_h">Wholesale</h3>
-                        <p>Bulk Sales of Pharmaceutical Products</p>
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 md:w-12 md:h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
-                        </svg>
-
-                    </span>
-                    <span>
-                        <h3 id="services_mainContent_offeredServices-details_h">Distribution</h3>
-                        <p>Efficient Delivery, Nationwide Reach</p>
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 md:w-12 md:h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
-                        </svg>
-
-                    </span>
-                    <span>
-                        <h3 id="services_mainContent_offeredServices-details_h">Marketing</h3>
-                        <p>Strategically Promoting Health & Wellness</p>
-                    </span>
-                </div>
-                <!-- <div>
-                    <span id="consultancy">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 md:w-12 md:h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                        </svg>
-
-                    </span>
-                    <span>
-                        <h3 id="services_mainContent_offeredServices-details_h">Consultancy</h3>
-                        <p>We offer world class nation wide delivery services.</p>
-                    </span>
-                </div> -->
-            </div>
-            <div class="services_mainContent_offeredServices-details">
-                <div id="wholesale">
-                    <h4>1. Wholesale</h4>
-                    <p>We are the bridge linking local manufacturers and Importers to Retail pharmacies, hospitals,
-                        clinics, and other wholesalers. Our customer relations team help strengthens this bridge. They
-                        are readily available to deliver the best in class services to you.</p>
-                    <p>We are major distributors to all leading pharmaceutical and healthcare product manufacturers and
-                        importers in Nigeria. We have a wide range of products and so serve as a one-stop pharmaceutical
-                        wholesale and distribution centre. Our modern Wholesale and Distribution centre comes equipped
-                        with metal shelves and pallets that allows for proper storage and display of product.</p>
-                    <p>Air conditioners and Temperature monitoring devices are strategically placed to ensure that
-                        Pharmaceuticals are stored under the right temperature and in appropriate condition and
-                        environment. Good distribution practice and all standard operating procedures are adhered to,
-                        and this guarantees the quality of products delivered to our customers from the
-                        manufacturer/importer</p>
-                </div>
-                <div id="distribution">
-                    <h4>2. Distribution</h4>
-                    <p>Trinity pharmacare Ltd represents and distributes/Market products for International/Local brand
-                        that we are in partnership with using dedicated field force personnel and our vast logistic
-                        resources, we are able to deliver products for our business partners into the distribution
-                        channel.</p>
-                    <p>We handle importation, marketing and distribution using our vast distribution channel based on
-                        Good distribution practice (GDP). We offer competitive value through world-class sourcing, We
-                        work with our customers on solutions-including supply management technology, world-class
-                        marketing programs, managed care and services that help them meet their business and quality
-                        goals.</p>
-                </div>
-                <div id="marketing">
-                    <h4>3. Marketing</h4>
-                    <p>We provide information by advertising and promoting our brands and product to the public. as well
-                        as market and detail our products and services to healthcare professionals.</p>
-                </div>
-            </div>
+    <main class="product_mainContent">
+        <div class="product_mainContent_landingview">
+            <div class="product_mainContent_landingview_cover"></div>
+            <h1 id="product_mainContent_landingview_h">Products List</h1>
+            <span>Products we offer</span>
         </div>
     </main>
     <footer class="footer_Details">
@@ -324,7 +233,7 @@
                 <span><i class="bi bi-geo-fill"></i></span>
                 <p>
                     <span>Get directions</span>
-                    <small><a href="https://maps.app.goo.gl/bm2Ftx3SM4omuz5f8">Find us on map</a></small>
+                    <small><a href="https://maps.app.goo.gl/bm2Ftx3SM4omuz5f8" target="_blank">Find us on map</a></small>
                 </p>
             </div>
             <div class="footer-Contact_info-contact">
@@ -376,33 +285,24 @@
             <div class="footer-info-hospitalHours">
                 <h1 id="footer-info-hospitalHours-header">Opening Hours</h1>
                 <p>
-                    <span><small>Monday</small> <em> - </em><small>08:00 am - 5:00 pm</small></span>
-                    <span>
-                        <small>Tuesday</small> <em> - </em><small>08:00 am - 5:00 pm</small>
+                    <span><small> Monday </small><em> - </em><small>08:00 am - 5:00 pm</small></span>
+                    <span><small>Tuesday</small> <em> - </em><small>08:00 am - 5:00 pm</small>
                     </span>
-                    <span>
-                        <small>
-                            Wednesday</small> <em> - </em><small>08:00 am - 5:00 pm</small>
+                    <span><small>Wednesday </small><em> - </em><small>08:00 am - 5:00 pm</small>
 
                     </span>
-                    <span>
-                        <small>
-                            Thursday</small> <em> - </em><small>08:00 am - 5:00 pm</small>
+                    <span><small>Thursday </small><em> - </em><small>08:00 am - 5:00 pm</small>
 
                     </span>
-                    <span>
-                        <small>
-                            Friday</small> <em> - </em><small>08:00 am - 5:00 pm</small>
+                    <span><small>Friday </small><em> - </em><small>08:00 am - 5:00 pm</small>
 
                     </span>
-                    <span>
-                        <small>
-                            Saturday</small> <em> - </em><small>09:00 am - 3:00 pm</small>
+                    <span><small>Saturday </small><em> - </em><small>09:00 am - 3:00 pm</small>
 
                     </span>
                 </p>
                 <!-- <span class="footer-info-emergencyHour"><a href="#">Emergency : 24 hours</a></span> -->
-            </div>
+                </div>
         </section>
         <section class="copyright">
             <span class="copyright_socials">
@@ -427,5 +327,4 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
-
 </html>
