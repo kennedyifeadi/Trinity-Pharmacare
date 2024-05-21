@@ -1,0 +1,25 @@
+.productlist{
+    width: 80%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    row-gap: 40px;
+}
+.productlist ul{
+    list-style: disc;
+    width: 30%;
+}
+.productlist ul h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+@media screen and (max-width:450px){
+    .productlist ul{
+        width: 100%;
+    }
+    .productlist ul h1{
+        font-size: 18px;
+    }
+}
