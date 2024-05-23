@@ -1250,11 +1250,12 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     }
 }
 .whyUs{
+    margin-top: 380px;
     width: 95%;
     height: max-content;
     flex-direction: column;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     align-items: center;
 }
 #whyUs_h{
@@ -1267,13 +1268,15 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .whyUsContentContainer{
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
     width: 100%;
     height: max-content;
     justify-content: space-between;
 }
 .whyUsContentContainer div{
     width: 30%;
-    height: 400px;
+    height: 320px;
     border-radius: 4px;
     background-color: #007dbc38;
     display: flex;
@@ -1303,7 +1306,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 @media screen and (max-width:450px){
     .whyUs{
-        margin-top: 30px;
+        margin-top: 600px;
     }
     #whyUs_h{
         font-size: 20px;
@@ -1377,7 +1380,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .footer-info{
     width: 100%;
-    background-color: rgb(209, 208, 208);
+    background-color: #06175d;
     height: 500px;
     display: flex;
     justify-content: space-between;
@@ -1400,11 +1403,11 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 .footer-info-addressandContactDetails address{
     width: 90%;
     line-height: 2.1rem;
-    color: rgb(128, 128, 128);
+    color: white;
     margin-bottom: 20px;
 }
 .footer-info-addressandContactDetails p{
-    color: #007dbc;
+    color: white;
     font-size: 13px;
     display: flex;
     gap:10px;
@@ -1419,16 +1422,18 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
+    color: white;
 }
 .footer-info-aboutUs a, .footer-info-ourServices a{
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
-    color: rgb(128, 128, 128);
+    color: white;
     cursor: pointer;
 }
 .footer-info-aboutUs a:hover, .footer-info-ourServices a:hover{
-    color: #007dbc;
+    color: white;
+    text-decoration: underline;
 }
 .footer-info-hospitalHours p{
     display: flex;
@@ -1441,7 +1446,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 .footer-info-hospitalHours p span{
     display: flex;
     font-weight: 400;
-    color: #007dbc;
+    color: white;
     margin-bottom: 10px;
     font-size: 13px;
     justify-content: space-between;
@@ -1454,7 +1459,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .footer-info-hospitalHours p span small{
     font-size: 13px;
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 .footer-info-emergencyHour{
     width: 80%;
