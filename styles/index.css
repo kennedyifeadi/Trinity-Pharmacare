@@ -41,6 +41,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    display: none;
 }
 .h_info-time, .h_info-phone, .h_info-email{
     width: max-content;
