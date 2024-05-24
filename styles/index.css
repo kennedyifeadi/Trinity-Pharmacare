@@ -36,7 +36,7 @@ body{
     color:#007dbc ;
 }
 .header_info{
-    width: 70%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -85,6 +85,9 @@ body{
 }
 .header_Socials a:hover{
     color: #10d3fb;
+}
+.h_info-phone{
+    display: none;
 }
 @media screen and (max-width:450px) {
     .header{
@@ -740,6 +743,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 .main_product{
     margin-top: 100px;
