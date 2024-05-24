@@ -492,7 +492,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     top: 105%;
     z-index: 111;
     width: 80%;
-    height: 250px;
+    height: max-content;
     border-radius: 4px;
     background-color: #007dbc;
     display: flex;
@@ -739,6 +739,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     height: max-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .main_product{
     margin-top: 100px;
@@ -749,6 +750,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
+    align-self: center;
+    justify-self: center;
 }
 .main_product h1{
     font-size: 36px;
@@ -786,16 +789,17 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     transform: translateX(5px);
 }
 .main_product-cards{
-    width: 100%;
+    width: 95%;
     height: max-content;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 10px;
-
+    row-gap: 20px;
 }
 .product-cards{
     height: 450px;
-    width: 27%;
+    width: 30%;
     box-shadow: 1px 1px 20px rgba(128, 128, 128, 0.377);
     overflow: hidden;
     border-radius: 8px;
@@ -835,7 +839,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     }
 }
 .main_Contentfour{
-    width: 94%;
+    width: 95%;
     height: max-content;
     display: flex;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
@@ -857,7 +861,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .aboutUs_details{
     width: 50%;
-    height: 700px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     padding: 80px 50px 80px 50px;
@@ -1251,7 +1255,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .whyUs{
     margin-top: 380px;
-    width: 95%;
+    width: 70%;
     height: max-content;
     flex-direction: column;
     display: flex;
@@ -1275,8 +1279,9 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     justify-content: space-between;
 }
 .whyUsContentContainer div{
-    width: 30%;
-    height: 320px;
+    width: 40%;
+    height: max-content;
+    min-height: 320px;
     border-radius: 4px;
     background-color: #007dbc38;
     display: flex;
@@ -1307,6 +1312,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 @media screen and (max-width:450px){
     .whyUs{
         margin-top: 600px;
+        width: 90%;
     }
     #whyUs_h{
         font-size: 20px;
@@ -1383,6 +1389,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     background-color: #06175d;
     height: 500px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-left: 50px;
@@ -1393,7 +1400,6 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     width: 23%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
 }
 .footer-info-addressandContactDetails img{
     width: 40%;
@@ -1423,6 +1429,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     font-weight: 600;
     margin-bottom: 20px;
     color: white;
+    text-transform: capitalize;
 }
 .footer-info-aboutUs a, .footer-info-ourServices a{
     display: flex;
@@ -1434,6 +1441,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 .footer-info-aboutUs a:hover, .footer-info-ourServices a:hover{
     color: white;
     text-decoration: underline;
+
 }
 .footer-info-hospitalHours p{
     display: flex;
@@ -1448,13 +1456,13 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     font-weight: 400;
     color: white;
     margin-bottom: 10px;
-    font-size: 13px;
+    font-size: 16px;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer-info-hospitalHours p span small:nth-child(1){
-    font-size: 13px;
+    font-size: 16px;
     width: 40%;
 }
 .footer-info-hospitalHours p span small{
@@ -1551,4 +1559,54 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 #dropdownNavbarLink:hover #dropdownNavbar{
     display: block;
     z-index: 11111111111111111111111111111111111111111111111111111111111111111;
+}
+@media (min-width:600px) and (max-width:884px) {
+    .header{
+        display: none;
+    }
+    .nav_Bar{
+        height: 80px;
+    }
+    .carouselItem h1, .carouselItemTwo h1{
+        font-size: 36px;
+    }
+    .carouselItem h3, .carouselItemTwo h3{
+        font-size: 28px;
+    }
+    .carouselItem p, .carouselItemTwo p{
+        width: 70%;
+    }
+    .carouselItem a, .carouselItemTwo a{
+        width: 30%;
+    }
+    .whyUs{
+        width: 90%;
+    }
+    .whyUsContentContainer div{
+        width: 45%;
+    }
+    .main_product-cards{
+        width: 95%;
+    }
+    .product-cards{
+        width: 45%;
+    }
+    .aboutUs_image{
+        display: none;
+    }
+    .aboutUs_details{
+        width: 100%;
+        padding: 10px;
+
+    }
+    .footer-info{
+        height: 800px;
+    }
+    .footer-Contact_info-contact p small i{
+        display: none;
+    }
+    .footer-info div{
+        height: max-content;
+        width: 40%;
+    }
 }
